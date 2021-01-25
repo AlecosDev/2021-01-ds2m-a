@@ -2,38 +2,46 @@ package br.senai.sp.jandira;
 
 import br.senai.sp.jandira.model.Conta;
 
+import br.senai.sp.jandira.model.Cliente;
+
 public class App {
 
 	public static void main(String[] args) {
 
 		
-		Conta contaDaAna = new Conta();
+		Conta contaDaAnaJulia = new Conta();
 		Conta contaDoJoao = new Conta();
 		
-		contaDaAna.titular = "Ana Gomes";
-		contaDaAna.numero = "111-98";
-		contaDaAna.setTipo("Banana");
-		contaDaAna.ativa = true;
-		contaDaAna.chequeEspecial = 200;
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(30);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(500);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(50);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.sacar(80);
-		contaDaAna.mostrarSaldoDaConta();
-		contaDaAna.depositar(100);
-		contaDaAna.mostrarSaldoDaConta();
+//		contaDaAnaJulia.setTitular("Ana Julia");
+		contaDaAnaJulia.setNumero("111-98");
+		contaDaAnaJulia.setTipoDaConta("Banana");
+		contaDaAnaJulia.setAtiva(true);
+		contaDaAnaJulia.setChequeEspecial(200);
+		contaDaAnaJulia.depositar(100);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.depositar(30);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.sacar(50);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.sacar(500);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.sacar(50);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.sacar(80);
+		contaDaAnaJulia.mostrarSaldoDaConta();
+		contaDaAnaJulia.depositar(100);
+		contaDaAnaJulia.mostrarSaldoDaConta();
 		
-		double valorSaldo = contaDaAna.getSaldo();
+		double valorSaldo = contaDaAnaJulia.getSaldo();
 		
 		System.out.println("****"+ valorSaldo);
-		System.out.println(contaDaAna.getTitular());
+		System.out.println("Nome do(a) titular: " + contaDaAnaJulia.getTitular());
+		System.out.println("Conta: " + contaDaAnaJulia.getNumero());
+		System.out.println("Tipo: " + contaDaAnaJulia.getTipoDaConta());
+		System.out.println("Situação: " + contaDaAnaJulia.isAtiva());
+		System.out.println("Cheque especial: " + contaDaAnaJulia.getChequeEspecial());
+		
+		Cliente cliente = new Cliente();
 	}
 	
 }

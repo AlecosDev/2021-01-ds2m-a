@@ -1,0 +1,7 @@
+1611573975543	Rename method 'setAtiva'
+1611574130158	Rename local variable 'contaDaAna'
+1611575923505	Rename field 'tipo'
+1611575960822	Rename local variable 'tipo'
+1611582522684	Rename method 'setTipo'
+1611582570398	Rename method 'isAtiva'
+1611582677056	Rename method 'getTipo'
